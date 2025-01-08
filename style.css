@@ -40,3 +40,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+.clear,
+.delete {
+  background: #ff5e57;
+  color: white;
+}
+.equals {
+  grid-column: 3 / 5;
+  background: #007bff;
+  color: white;
+}
