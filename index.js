@@ -59,6 +59,10 @@ function handleButtonClick(event) {
     if (previousNumber === null) {
       previousNumber = parseFloat(currentNumber);
     } else if (operator && !shouldResetDisplay) {
+      previousNumber = calculate(previousNumber, currentNumber, operator);
     }
+    operator = buttonText;
+    shouldResetDisplay = true;
+  } else {
   }
 }
