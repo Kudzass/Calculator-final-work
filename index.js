@@ -76,3 +76,8 @@ function handleButtonClick(event) {
   }
   updateDisplay();
 }
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].onclick = function (e) {
+    handleButtonClick(e);
+  };
+}
