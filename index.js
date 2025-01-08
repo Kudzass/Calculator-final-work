@@ -15,4 +15,17 @@ function updateDisplay() {
 }
 function calculate(num1, num2, operator) {
   let result = 0;
+  if (operator === "+") {
+    result = parseFloat(num1) + parseFloat(num2);
+  } else if (operator === "-") {
+    result = parseFloat(num1) - parseFloat(num2);
+  } else if (operator === "x") {
+    result = parseFloat(num1) * parseFloat(num2);
+  } else if (operator === "÷") {
+    if (parseFloat(num2) === 0) {
+      return "Error";
+    }
+    result = parseFloat(num1) / parseFloat(num2);
+  }
+  return result + "";
 }
