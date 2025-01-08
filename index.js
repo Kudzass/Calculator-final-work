@@ -44,5 +44,11 @@ function handleButtonClick(event) {
       currentNumber = "0";
     }
   } else if (buttonText === "=") {
+    if (previousNumber !== null && operator !== null) {
+      currentNumber = calculate(previousNumber, currentNumber, operator);
+      previousNumber = null;
+      operator = null;
+      shouldResetDisplay = true;
+    }
   }
 }
