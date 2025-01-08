@@ -64,5 +64,14 @@ function handleButtonClick(event) {
     operator = buttonText;
     shouldResetDisplay = true;
   } else {
+    if (shouldResetDisplay) {
+      currentNumber = buttonText;
+      shouldResetDisplay = false;
+    } else {
+      if (currentNumber === "0" && buttonText !== ".") {
+        currentNumber = buttonText;
+        currentNumber = currentNumber + buttonText;
+      }
+    }
   }
 }
