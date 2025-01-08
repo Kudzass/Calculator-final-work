@@ -32,4 +32,11 @@ function calculate(num1, num2, operator) {
 
 function handleButtonClick(event) {
   const buttonText = event.target.innerText;
+  if (buttonText === "AC") {
+    currentNumber = "0";
+    previousNumber = null;
+    operator = null;
+    shouldResetDisplay = false;
+  } else if (buttonText === "DEL") {
+  }
 }
