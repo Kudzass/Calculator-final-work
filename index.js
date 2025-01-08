@@ -38,5 +38,11 @@ function handleButtonClick(event) {
     operator = null;
     shouldResetDisplay = false;
   } else if (buttonText === "DEL") {
+    if (currentNumber.length > 1) {
+      currentNumber = currentNumber.substring(0, currentNumber.length - 1);
+    } else {
+      currentNumber = "0";
+    }
+  } else if (buttonText === "=") {
   }
 }
