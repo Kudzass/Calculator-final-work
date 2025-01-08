@@ -6,4 +6,10 @@ let shouldResetDisplay = false;
 const display = document.getElementById("display");
 const buttons = document.querySelectorAll(".button");
 
-function updateDisplay() {}
+function updateDisplay() {
+  if (currentNumber === null) {
+    display.innerHTML = "0";
+  } else {
+    display.innerHTML = currentNumber;
+  }
+}
