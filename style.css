@@ -50,3 +50,9 @@ body {
   background: #007bff;
   color: white;
 }
+.number {
+  background: #f1f1f1;
+}
+.operator {
+  background: #f1f1f1;
+}
