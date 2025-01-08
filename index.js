@@ -74,4 +74,5 @@ function handleButtonClick(event) {
       }
     }
   }
+  updateDisplay();
 }
