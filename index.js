@@ -50,5 +50,11 @@ function handleButtonClick(event) {
       operator = null;
       shouldResetDisplay = true;
     }
+  } else if (
+    buttonText === "+" ||
+    buttonText === "-" ||
+    buttonText === "x" ||
+    buttonText === "÷"
+  ) {
   }
 }
