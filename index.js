@@ -13,4 +13,6 @@ function updateDisplay() {
     display.innerHTML = currentNumber;
   }
 }
-function calculate(num1, num2, operator) {}
+function calculate(num1, num2, operator) {
+  let result = 0;
+}
