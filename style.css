@@ -23,3 +23,10 @@ body {
   border-radius: 10px 10px 0 0;
   height: 100px;
 }
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 80px);
+  gap: 15px;
+  padding: 20px;
+}
