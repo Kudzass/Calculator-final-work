@@ -56,5 +56,9 @@ function handleButtonClick(event) {
     buttonText === "x" ||
     buttonText === "÷"
   ) {
+    if (previousNumber === null) {
+      previousNumber = parseFloat(currentNumber);
+    } else if (operator && !shouldResetDisplay) {
+    }
   }
 }
