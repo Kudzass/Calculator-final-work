@@ -70,6 +70,7 @@ function handleButtonClick(event) {
     } else {
       if (currentNumber === "0" && buttonText !== ".") {
         currentNumber = buttonText;
+      } else {
         currentNumber = currentNumber + buttonText;
       }
     }
