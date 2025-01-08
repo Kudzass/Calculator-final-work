@@ -29,3 +29,7 @@ function calculate(num1, num2, operator) {
   }
   return result + "";
 }
+
+function handleButtonClick(event) {
+  const buttonText = event.target.innerText;
+}
