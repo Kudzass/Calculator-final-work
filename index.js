@@ -13,3 +13,4 @@ function updateDisplay() {
     display.innerHTML = currentNumber;
   }
 }
+function calculate(num1, num2, operator) {}
