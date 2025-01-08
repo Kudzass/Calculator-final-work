@@ -40,8 +40,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-.clear,
+.clear {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  background: #ff5e57;
+  color: white;
+}
 .delete {
+  grid-column: 3 / 4;
+  grid-row: 1;
   background: #ff5e57;
   color: white;
 }
