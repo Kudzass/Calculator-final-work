@@ -67,12 +67,10 @@ function handleButtonClick(event) {
     if (shouldResetDisplay) {
       currentNumber = buttonText;
       shouldResetDisplay = false;
+    } else if (currentNumber === "0" && buttonText !== ".") {
+      currentNumber = buttonText;
     } else {
-      if (currentNumber === "0" && buttonText !== ".") {
-        currentNumber = buttonText;
-      } else {
-        currentNumber = currentNumber + buttonText;
-      }
+      currentNumber += buttonText;
     }
   }
   updateDisplay();
